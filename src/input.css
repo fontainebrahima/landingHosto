@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #242a2b;
+  --color-secondary: #808080;
+  --color-accent: #1cbccf;
+  --color-accent-secondary: #18abbc;
+  --color-accent-tertiary: #90c6cd;
+  --color-grey: #e8f0f1;
+
+  --font-primary: Poppins, sans-serif;
+}
+
 body{
-    @apply text-secondary font-family text-[17px] leading-8;
+    @apply text-secondary font-primary text-[17px] leading-8;
 }
 
 h1, h2,
@@ -45,7 +56,7 @@ h1, h2,
 }
 
 .btn-white {
-    @apply bg-white text-secondary hover: bg white/ 90px;
+    @apply bg-white text-secondary hover:bg-white/90;
 }
 
 .btn-outline {
@@ -61,16 +72,16 @@ h1, h2,
 }
 
 .section {
-    @apply py-12 xl:py-[150px]
+    @apply py-12 xl:py-[150px];
 }
 
 
 /* swiper bullets */
 
-.swiper-horizontal > .swiper-pagination-bullets 
-.swiper-pagination-bullet
-.swiper-pagination-horizontal.swiper-pagination-bullets
-.swiper-pagination-bullet{
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets,
+.swiper-pagination-bullet {
  @apply bg-accent;
 }
 
