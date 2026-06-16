@@ -84,7 +84,8 @@
          </nav>
 
          <!-- desktop nav -->
-         <nav class="bg-white absolute w-full left-1 -bottom-[86px] shadow-lg h-16 rounded-[10px]  hidden lg:flex lg:items-center lg:justify-center lg:px-[50px]">
+         <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-lg h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-12.5">
+           
             <ul class="flex gap-x-4">
                     <li >
                         <a class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300" href="http://">Home</a>
@@ -106,17 +107,40 @@
                     </li>
             </ul>
 
-            <form class="relative gap-x-[10px]">
-                    <label for="search-input" class="flex justify-center items-center group">
-                        <i class="ri-search-line text-2xl text-accent"></i>
-                    </label>
-                    <input type="text" id="search-input" class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-accent placeholder:text-base placeholder:italic transition-all duration-300" placeholder="Search..." />
-                </form>
+            <form class="relative flex gap-x-2.5">
+                <label for="search-input" class="flex justify-center items-center group">
+                    <i class="ri-search-line text-2xl text-accent"></i>
+                </label>
+                <input type="text" id="search-input" class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-accent placeholder:text-base placeholder:italic transition-all duration-150" placeholder="Search.." />
+            </form>
          </nav>
 
     </div>
 </div>
 </header>
+
+<!-- hero section -->
+ <section class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+    <div class="container mx-auto h-full">
+
+        <div class="flex flex-col xl:flex-row justify-between items-center h-full">
+            <br>
+            <div>
+                <div>Badge</div>
+                <div>Title</div>
+            </div>
+            <h1>title</h1>
+            <p>description</p>
+            <button>contact us</button>
+
+            <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+                <img src="assets/img/hero/img.png" alt="">
+            </div>
+        </div>
+
+    </div>
+ </section>
+ <!-- end hero section -->
 
 <script src="js/main.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
