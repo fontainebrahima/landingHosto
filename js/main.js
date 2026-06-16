@@ -15,3 +15,11 @@ closeBtn.addEventListener("click", () => {
         closeBtnInco.classList.toggle(arrowRightClass)
     };
 });
+window.addEventListener("click", (e) => {
+    if (!mobilNav.contains(e.target) && !closeBtn.contains(e.target)) {
+        mobilNav.classList.remove(navOpenedClass);
+        mobilNav.classList.add(navClosedClass);
+        closeBtnInco.classList.remove(arrowLeftClass);
+        closeBtnInco.classList.add(arrowRightClass);
+    }
+});

@@ -17,6 +17,7 @@
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-light: 300;
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --radius-lg: 0.5rem;
     --default-transition-duration: 150ms;
@@ -243,6 +244,15 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-6\.5 {
+    margin-bottom: calc(var(--spacing) * 6.5);
+  }
+  .mb-\[42px\] {
+    margin-bottom: 42px;
+  }
   .flex {
     display: flex;
   }
@@ -279,8 +289,11 @@
   .w-full {
     width: 100%;
   }
-  .max-w-\[814px\] {
-    max-width: 814px;
+  .w-max {
+    width: max-content;
+  }
+  .max-w-203\.5 {
+    max-width: calc(var(--spacing) * 203.5);
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -318,17 +331,20 @@
   .gap-y-4 {
     row-gap: calc(var(--spacing) * 4);
   }
+  .gap-y-8 {
+    row-gap: calc(var(--spacing) * 8);
+  }
   .gap-y-12 {
     row-gap: calc(var(--spacing) * 12);
-  }
-  .self-end {
-    align-self: flex-end;
   }
   .overflow-hidden {
     overflow: hidden;
   }
   .rounded-\[10px\] {
     border-radius: 10px;
+  }
+  .rounded-\[50px\] {
+    border-radius: 50px;
   }
   .rounded-tr-lg {
     border-top-right-radius: var(--radius-lg);
@@ -349,8 +365,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
@@ -361,9 +383,27 @@
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
   }
+  .text-center {
+    text-align: center;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .tracking-\[24px\] {
+    --tw-tracking: 24px;
+    letter-spacing: 24px;
+  }
+  .text-\[\#9ab4b7\] {
+    color: #9ab4b7;
   }
   .text-accent {
     color: var(--color-accent);
@@ -373,6 +413,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .opacity-80 {
     opacity: 80%;
@@ -523,14 +566,29 @@
       padding-bottom: calc(var(--spacing) * 14);
     }
   }
+  .xl\:mx-0 {
+    @media (width >= 83.125rem) {
+      margin-inline: 0;
+    }
+  }
   .xl\:flex {
     @media (width >= 83.125rem) {
       display: flex;
     }
   }
+  .xl\:w-\[48\%\] {
+    @media (width >= 83.125rem) {
+      width: 48%;
+    }
+  }
   .xl\:flex-row {
     @media (width >= 83.125rem) {
       flex-direction: row;
+    }
+  }
+  .xl\:gap-y-0 {
+    @media (width >= 83.125rem) {
+      row-gap: 0;
     }
   }
   .xl\:pt-12 {
@@ -541,6 +599,11 @@
   .xl\:pb-0 {
     @media (width >= 83.125rem) {
       padding-bottom: 0;
+    }
+  }
+  .xl\:text-left {
+    @media (width >= 83.125rem) {
+      text-align: left;
     }
   }
 }
@@ -710,6 +773,14 @@ h1, h2, h3, h4, h5, h6 {
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -836,14 +907,6 @@ h1, h2, h3, h4, h5, h6 {
   syntax: "*";
   inherits: false;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-tracking {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -853,6 +916,8 @@ h1, h2, h3, h4, h5, h6 {
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -882,8 +947,6 @@ h1, h2, h3, h4, h5, h6 {
       --tw-drop-shadow-size: initial;
       --tw-duration: initial;
       --tw-leading: initial;
-      --tw-font-weight: initial;
-      --tw-tracking: initial;
     }
   }
 }

@@ -121,19 +121,27 @@
 
 <!-- hero section -->
  <section class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+
     <div class="container mx-auto h-full">
 
-        <div class="flex flex-col xl:flex-row justify-between items-center h-full">
-            <br>
-            <div>
-                <div>Badge</div>
-                <div>Title</div>
-            </div>
-            <h1>title</h1>
-            <p>description</p>
-            <button>contact us</button>
+        <div class="flex flex-col xl:flex-row items-center justify-between h-full gap-y-8 xl:gap-y-0">
 
-            <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+            <div class="hero__text xl:w-[48%] text-center xl:text-left flex flex-col gap-y-8">
+                <!-- badge -->
+                <div class="flex items-center bg-white py-2.5 px-2-5 w-max gap-x-2 mb-6.5 rounded-[50px] mx-auto xl:mx-0">
+                    <!-- badge icon -->
+                    <i class="ri-heart-pulse-line text-2xl text-accent"></i>
+                    <div class="uppercase text-base font-medium text-[#9ab4b7] tracking-[24px]">
+                        Vis ta vie
+                    </div>
+                </div>
+
+                <h1 class="h1 mb-6">Nous nous soucions de votre sante</h1>
+                <p class="mb-42 md:max-w-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta modi accusamus saepe, reprehenderit harum blanditiis quidem voluptatibus sunt et in consequatur impedit porro beatae sit consequuntur sequi vero, sed assumenda?</p>
+                <button class="btn btn-sm btn-accent mx-auto xl:mx-0">contact us</button>
+            </div>
+
+            <div class="hero__img hidden xl:flex max-w-203.5">
                 <img src="assets/img/hero/img.png" alt="">
             </div>
         </div>
@@ -142,6 +150,27 @@
  </section>
  <!-- end hero section -->
 
+ <!-- stats -->
+<section class="stats section">
+    <div class="container mx-auto">
+        <!-- wrapper -->
+         <div>
+            <!-- items -->
+            <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                <div class="text-4xl xl:text-5xl font-semibold text-accent-tertiary xl:mb-2">+5120</div>
+                <div>happy patients</div>
+            </div>
+         </div>
+    </div>
+</section>
+
+ <!-- endstats -->
+
+ <!-- temp div -->
+
+ <div class="h-[4000px]"><d/div>
+
+ <!-- end temp div -->
 <script src="js/main.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
   </body>
