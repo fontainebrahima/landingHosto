@@ -90,6 +90,11 @@ h1, h2, h3, h4, h5, h6 {
     @apply bg-accent;
 }
 
+/* services background */
+.bg-services {
+    background-image: url('../assets/img/services/bg.svg');
+}
+
 /* faq */
 .faq__items.opens .faq__answer {
     @apply h-full;
