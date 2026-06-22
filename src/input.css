@@ -94,6 +94,9 @@ h1, h2, h3, h4, h5, h6 {
 .bg-services {
     background-image: url('../assets/img/services/bg.svg');
 }
+.bg-testimonials {
+    background-image: url('../assets/img/testimonials/bg.svg');
+}
 
 /* faq */
 .faq__items.opens .faq__answer {
