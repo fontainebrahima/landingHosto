@@ -255,6 +255,9 @@
   .mb-6\.5 {
     margin-bottom: calc(var(--spacing) * 6.5);
   }
+  .box-border {
+    box-sizing: border-box;
+  }
   .flex {
     display: flex;
   }
@@ -270,8 +273,8 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
-  .h-\[400px\] {
-    height: 400px;
+  .h-\[368px\] {
+    height: 368px;
   }
   .h-\[4000px\] {
     height: 4000px;
@@ -336,6 +339,9 @@
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
+  .gap-x-8 {
+    column-gap: calc(var(--spacing) * 8);
+  }
   .gap-x-\[10px\] {
     column-gap: 10px;
   }
@@ -356,6 +362,9 @@
   }
   .rounded-\[10px\] {
     border-radius: 10px;
+  }
+  .rounded-\[20px\] {
+    border-radius: 20px;
   }
   .rounded-\[50px\] {
     border-radius: 50px;
@@ -388,6 +397,9 @@
   .px-2-5 {
     padding-inline: var(--spacing-2-5);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
@@ -399,6 +411,9 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .pt-\[70px\] {
+    padding-top: 70px;
   }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
@@ -429,6 +444,9 @@
   .tracking-\[24px\] {
     --tw-tracking: 24px;
     letter-spacing: 24px;
+  }
+  .\!text-white {
+    color: var(--color-white) !important;
   }
   .text-\[\#9ab4b7\] {
     color: #9ab4b7;
@@ -607,6 +625,11 @@
       margin-inline: 0;
     }
   }
+  .xl\:mb-0 {
+    @media (width >= 83.125rem) {
+      margin-bottom: 0;
+    }
+  }
   .xl\:mb-2 {
     @media (width >= 83.125rem) {
       margin-bottom: calc(var(--spacing) * 2);
@@ -641,6 +664,11 @@
     @media (width >= 83.125rem) {
       border-right-style: var(--tw-border-style);
       border-right-width: 1px;
+    }
+  }
+  .xl\:px-0 {
+    @media (width >= 83.125rem) {
+      padding-inline: 0;
     }
   }
   .xl\:pt-12 {
