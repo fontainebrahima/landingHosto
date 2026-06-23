@@ -203,7 +203,7 @@
         <!-- grid -->
          <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
             <!-- grid items -->
-            <div class="services__item bg-white p-[10px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col  items-center text-center ">
+            <div class="services__item bg-white/90 p-[10px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col  items-center text-center ">
              <!-- grid item icon -->
               <div class="mb-[15px]"><img src="assets/icons/services/icon-1.svg" alt="" srcset=""></div>
               <!-- grid item title -->
@@ -212,7 +212,7 @@
                 <p class="font-light leading-normal max-w-[300px]">Lorem ipsum dolor sit amet consectetur amet adipisicing elit.</p>
             </div>
             <!-- grid items -->
-            <div class="services__item bg-white p-[10px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col  items-center text-center ">
+            <div class="services__item bg-white/90 p-[10px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col  items-center text-center ">
              <!-- grid item icon -->
               <div class="mb-[15px]"><img src="assets/icons/services/icon-2.svg" alt="" srcset=""></div>
               <!-- grid item title -->
@@ -221,7 +221,7 @@
                 <p class="font-light leading-normal max-w-[300px]">Lorem ipsum dolor sit amet consectetur amet adipisicing elit.</p>
             </div>
             <!-- grid items -->
-            <div class="services__item bg-white p-[10px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col  items-center text-center ">
+            <div class="services__item bg-white/90 p-[10px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col  items-center text-center ">
              <!-- grid item icon -->
               <div class="mb-[15px]"><img src="assets/icons/services/icon-3.svg" alt="" srcset=""></div>
               <!-- grid item title -->
@@ -230,7 +230,7 @@
                 <p class="font-light leading-normal max-w-[300px]">Lorem ipsum dolor sit amet consectetur amet adipisicing elit.</p>
             </div>
             <!-- grid items -->
-            <div class="services__item bg-white p-[10px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col  items-center text-center ">
+            <div class="services__item bg-white/90 p-[10px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col  items-center text-center ">
              <!-- grid item icon -->
               <div class="mb-[15px]"><img src="assets/icons/services/icon-4.svg" alt="" srcset=""></div>
               <!-- grid item title -->
@@ -297,19 +297,63 @@
  <!-- end section appointment -->
 
 <!-- testimonials -->
-
-<!-- end testimonials -->
-<section class="testimonial bg-testimonials bg-cover bg-right bg-no-repeat py-12">
+<section class="testimonial bg-testimonials bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0">
     <div class="testimonial__container container mx-auto ">
-        testimonial
+        <div class="flex flex-col items-center gap-x-14 xl:flex-row">
+            <!-- img -->
+             <div class="hidden xl:flex">
+                <img src="assets/img/testimonials/img.png" />
+             </div>
+             <!-- slider -->
+            <div class="max-w-[98%] xl:max-w-[710px]">
+                    <!-- Slider main container -->
+                    <div class="swiper h-[400px]">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="h-full flex flex-col justify-center items-start ">
+                                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                        <!-- message -->
+                                        <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left has-quotes mb-7"><span class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque dolor? Possimus voluptates veritatis exercitationem minus! Placeat incidunt dolor dicta quia!</span></p>
+                                        <!-- name -->
+                                         <div class="text-[26px] text-[#4c5354] font-semibold">James Rodriguez</div>
+                                         <!-- job -->
+                                          <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">customer</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="h-full flex flex-col justify-center items-start ">
+                                    <div class="max-w-[680px] mx-auto text-center xl:text-left">
+                                        <!-- message -->
+                                        <p class="font-light relative text-[22px] text-[#4c5354] leading-[190%] text-center xl:text-left has-quotes mb-7"><span class="mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, neque dolor? Possimus voluptates veritatis exercitationem minus! Placeat incidunt dolor dicta quia!</span></p>
+                                        <!-- name -->
+                                         <div class="text-[26px] text-[#4c5354] font-semibold">James Rodriguez</div>
+                                         <!-- job -->
+                                          <div class="text-[#9ab4b7] font-medium uppercase tracking-[2.24px]">customer</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+        </div>
     </div>
 </section>
+<!-- end testimonials -->
  <!-- temp div -->
 
  <div class="h-[4000px]"><d/div>
 
  <!-- end temp div -->
-<script src="js/main.js"></script>
+<script src="js/main.js" type="module"></script>
+
 <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>

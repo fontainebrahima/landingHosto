@@ -98,6 +98,36 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('../assets/img/testimonials/bg.svg');
 }
 
+.bg-quoteLeft {
+    background-image: url('../assets/icons/testimonials/quote-left.svg');
+}
+.bg-quoteRight {
+    background-image: url('../assets/icons/testimonials/quote-right.svg');
+}
+
+/* quotes for testimonials */
+@layer components {
+    .has-quotes::before,
+    .has-quotes::after {
+        content: '';
+        display: inline-block;
+        width: 2.5rem; /* corresponds to w-10 */
+        height: 2.5rem; /* corresponds to h-10 */
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+    .has-quotes::before {
+        background-image: url('../assets/icons/testimonials/quote-left.svg');
+        margin-right: 0.5rem;
+    }
+    .has-quotes::after {
+        background-image: url('../assets/icons/testimonials/quote-right.svg');
+        margin-left: 0.5rem;
+    }
+}
+
 /* faq */
 .faq__items.opens .faq__answer {
     @apply h-full;

@@ -23,3 +23,15 @@ window.addEventListener("click", (e) => {
         closeBtnInco.classList.add(arrowRightClass);
     }
 });
+
+// swipper
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+});
